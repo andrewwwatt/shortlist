@@ -1,0 +1,140 @@
+<!DOCTYPE html><html lang="en"><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1.0"><title>31 July 2026 — the Shortlist</title>
+<style>
+:root{--gold:#c9a84c;--dark:#1a1a1a;--cream:#f4f1ec;--card:#faf8f4;--body:#555555;--purple:#8B2FC9;--line:#f0ece4;--sub:#e8e3d8}
+*{margin:0;padding:0;box-sizing:border-box}
+body{font-family:Arial,Helvetica,sans-serif;background:var(--cream);color:#333;line-height:1.6;-webkit-font-smoothing:antialiased}
+/* site nav */
+.nav{background:var(--dark);position:sticky;top:0;z-index:50;box-shadow:0 1px 0 rgba(0,0,0,.2)}
+.nav .inner{max-width:960px;margin:0 auto;padding:0 20px;display:flex;align-items:center;justify-content:space-between;height:52px}
+.nav .brand{font-family:Georgia,'Times New Roman',serif;font-size:1.15rem;color:#fff;text-decoration:none}
+.nav .brand em{color:var(--gold);font-style:italic}
+.nav .links a{color:#ccc;text-decoration:none;font-size:.82rem;font-weight:bold;letter-spacing:.08em;text-transform:uppercase;padding:6px 10px;border-radius:4px;margin-left:2px}
+.nav .links a:hover{color:#fff;background:rgba(255,255,255,.08)}
+.nav .links a.active{color:var(--gold)}
+/* layout */
+.wrap{max-width:960px;margin:0 auto;padding:28px 20px 64px}
+.grid{display:grid;grid-template-columns:1fr 300px;gap:28px;align-items:start}
+.main{min-width:0;background:#fff;border-radius:6px;box-shadow:0 1px 4px rgba(0,0,0,.06);overflow:hidden}
+/* newsletter header */
+.news-header{background:var(--dark);padding:30px 34px 24px;text-align:center}
+.news-header img.logo{width:250px;max-width:70%;height:auto;display:block;margin:0 auto}
+.news-header .date{font-family:Arial,sans-serif;font-size:11px;color:#aaaaaa;letter-spacing:.1em;text-transform:uppercase;margin:12px 0 0}
+.news-header .badge{display:inline-block;background:var(--gold);color:var(--dark);font-size:9px;font-weight:bold;letter-spacing:.12em;text-transform:uppercase;padding:3px 10px;margin-top:8px;border-radius:2px}
+/* editor's note */
+.editor-note{border-left:3px solid var(--gold);background:var(--card);padding:20px 22px;margin:20px 34px 0}
+.editor-note .kicker{font-size:11px;font-weight:bold;letter-spacing:.14em;text-transform:uppercase;color:var(--gold);margin:0 0 10px}
+.editor-note p{font-family:Georgia,'Times New Roman',serif;font-size:15px;line-height:1.65;color:#333;font-style:italic;margin:0 0 14px}
+.editor-note p:last-child{margin-bottom:0}
+/* this week divider */
+.divider{padding:0 34px;margin:22px 0 0}
+.divider .label{font-size:13px;font-weight:bold;letter-spacing:.14em;text-transform:uppercase;color:var(--gold);border-top:2px solid var(--gold);padding-top:14px}
+/* stories */
+.story{padding:22px 34px;border-bottom:1px solid var(--line)}
+.story:last-of-type{border-bottom:none}
+.story .thumb{float:left;width:56px;height:40px;border-radius:3px;margin-right:16px;margin-bottom:6px;display:flex;align-items:center;justify-content:center;font-size:22px}
+.story .source{font-size:9px;font-weight:bold;letter-spacing:.1em;text-transform:uppercase;color:var(--gold);margin:0 0 4px}
+.story h2{font-family:Georgia,'Times New Roman',serif;font-size:18px;font-weight:bold;line-height:1.3;color:var(--dark);margin:0 0 8px}
+.story p.body{font-size:13.5px;line-height:1.6;color:var(--body);margin:0 0 10px}
+.story a.read{font-size:11px;font-weight:bold;color:var(--dark);text-decoration:none;letter-spacing:.05em;text-transform:uppercase;border-bottom:1.5px solid var(--gold);padding-bottom:1px}
+.story a.read:hover{color:var(--gold)}
+.story .clear{clear:both}
+/* special boxes */
+.box{padding:20px 34px}
+.box .box-inner{border-left:3px solid var(--gold);background:var(--card);padding:20px 22px}
+.box.ghost .box-inner{border-left-color:var(--purple)}
+.box .kicker{font-size:11px;font-weight:bold;letter-spacing:.14em;text-transform:uppercase;color:var(--gold);margin:0 0 12px}
+.box.ghost .kicker{color:var(--purple)}
+.box.ghost .box-inner{background:#fff}
+.box p{font-size:13px;line-height:1.6;color:var(--body);margin:0 0 12px}
+.box p.lead{font-family:Georgia,'Times New Roman',serif;font-size:15px;font-weight:bold;color:var(--dark);margin:0 0 6px}
+.box .links{margin-top:6px}
+.box .links a{font-size:11px;font-weight:bold;color:var(--dark);text-decoration:none;letter-spacing:.05em;text-transform:uppercase;border-bottom:1.5px solid var(--gold);padding-bottom:1px;margin-right:14px;white-space:nowrap}
+.box.ghost .links a{border-bottom-color:var(--purple)}
+.box .sub{margin-top:14px;padding-top:14px;border-top:1px solid var(--sub)}
+.box.and-finally p{font-family:Georgia,'Times New Roman',serif;font-size:16px;line-height:1.65;color:var(--dark)}
+.box.and-finally .kicker{margin-bottom:10px}
+/* ghost mail logo */
+.ghost-logo{display:block;width:110px;height:auto;margin-bottom:12px}
+/* sidebar */
+.side{display:flex;flex-direction:column;gap:18px}
+.side .card{background:#fff;border-radius:6px;padding:18px;box-shadow:0 1px 3px rgba(0,0,0,.05)}
+.side .card h3{font-size:10px;font-weight:bold;letter-spacing:.14em;text-transform:uppercase;color:var(--gold);margin:0 0 12px;padding-bottom:8px;border-bottom:1px solid var(--line)}
+.side .ad{border:2px dashed var(--gold);background:#fffbe6;text-align:center;padding:26px 14px;color:#999;font-size:.82rem;border-radius:6px}
+.side .ad span{display:block;font-weight:bold;color:var(--gold);font-size:.66rem;text-transform:uppercase;letter-spacing:1px;margin-bottom:6px}
+.side input[type=email],.side input[type=text]{width:100%;padding:9px 10px;border:1px solid var(--line);border-radius:4px;font-size:.85rem;margin-bottom:8px}
+.side button{width:100%;padding:9px;background:var(--gold);color:var(--dark);border:none;border-radius:4px;font-weight:bold;font-size:.85rem;cursor:pointer}
+.side button.dark{background:var(--dark);color:#fff}
+.side .stars{font-size:1.35rem;color:var(--gold);letter-spacing:5px;text-align:center;margin:4px 0 6px}
+.side .stars a{text-decoration:none;color:var(--gold)}
+.side label{display:block;font-size:.82rem;color:#555;margin:7px 0}
+.side label input{margin-right:6px}
+.side .muted{font-size:.74rem;color:#999;margin-top:8px}
+.side .placeholder{background:#f7f5f0;border-radius:4px;padding:16px 12px;text-align:center;color:#aaa;font-size:.82rem}
+/* archive */
+.arch-head{background:#fff;border-radius:6px;box-shadow:0 1px 4px rgba(0,0,0,.06);padding:28px 34px;margin-bottom:20px}
+.arch-head h1{font-family:Georgia,serif;font-size:1.5rem;color:var(--dark)}
+.arch-head .kicker{font-size:11px;font-weight:bold;letter-spacing:.14em;text-transform:uppercase;color:var(--gold);margin-bottom:8px}
+.arch-head p{font-size:13px;color:var(--body);margin-top:8px;font-style:italic}
+.arch-item{background:#fff;border-radius:6px;box-shadow:0 1px 3px rgba(0,0,0,.05);padding:20px 24px;margin-bottom:12px;display:flex;align-items:center;justify-content:space-between;text-decoration:none;color:inherit;transition:box-shadow .15s}
+.arch-item:hover{box-shadow:0 3px 12px rgba(0,0,0,.1)}
+.arch-item .d{font-family:Georgia,serif;font-weight:bold;color:var(--gold);font-size:.9rem;white-space:nowrap;margin-right:16px}
+.arch-item .t{font-family:Georgia,serif;font-size:1.05rem;color:var(--dark);font-weight:bold}
+.arch-item .n{font-size:.78rem;color:#999;margin-top:2px}
+.arch-item .arrow{color:var(--gold);font-size:1.1rem;margin-left:14px}
+/* footer */
+.site-footer{max-width:960px;margin:0 auto;padding:20px;text-align:center;font-size:11px;color:#999}
+.site-footer .bar{background:var(--dark);color:#777;padding:20px;border-radius:6px;line-height:1.7}
+.site-footer .bar em{color:var(--gold);font-style:normal}
+@media(max-width:820px){.grid{grid-template-columns:1fr}.side{order:2}.story{padding:20px}.editor-note{margin:16px 20px 0}.divider{padding:0 20px}.news-header{padding:24px 20px 20px}}
+</style>
+</head><body>
+
+<div class="nav"><div class="inner">
+<a class="brand" href="../index.html">the <em>Shortlist</em></a>
+<div class="links"><a href="../index.html" class="">This Week</a><a href="../archive.html" class="active">Archive</a></div>
+</div></div>
+
+<div class="wrap"><div class="main" style="max-width:720px;margin:0 auto"><div class="news-header">
+<img class="logo" src="../assets/logo.png" alt="the Shortlist">
+<div class="date">31 July 2026 &nbsp;&middot;&nbsp; Your week, curated</div>
+<div class="badge">National Edition</div>
+</div><div class="editor-note"><div class="kicker">Editor&rsquo;s Note</div><p>This week, it's less about the who, what and why, and more about the where. From Joburg to Cape Town, and pretty much everywhere in between, it seems everyone's trying to turn bricks into bucks.</p><p>Both the Mother City and the Big Smoke are convinced they're winning the property argument, while in actuality it is student accommodation across the board that's quietly outyielding the JSE. But financial adviser Warren Ingram is rather less enthused by it all, and runs the actual numbers on being a landlord – the bank, it turns out, usually wins.</p><p>On the ground: there's a Pretoria manor with a maze, an off-grid Plett home redefining luxury, and a mouldy Sea Point house redefining what a sea view is worth. Plus a bet on the Durban beachfront that not even the staunchest gambler might have made.</p><p>For good measure, there's a diamond mine in the mix too – De Beers, selling for a fraction of what it used to be worth, because it turns out girls aren't that concerned if their best friend is grown in a mine or in a lab.</p><p>Last but not least: the only view you won't have to pay for this week is the one in the sky. Two meteor showers peak tonight, no deposit required. We know everyone's talking property, so please forward this mail to whoever's mid property-debate over dinner this week – and if it landed in your inbox via a forward, subscribe. You'll out-talk your agent by Friday.</p></div><div class="divider"><div class="label">This Week</div></div><div class="story">
+<div class="thumb" style="background-color:#2a2210">&amp;#127968;</div>
+<div class="source">Currency News &amp; EWN</div>
+<h2>Hot property: Joburg vs Cape Town</h2>
+<p class="body">For years Cape Town was where the money went and Joburg was the story about people leaving. But that's changing. This week, Sandhurst and Waterfall are posting multi-year sales records – a R75m Sandhurst house, an R89m offer pending at Waterfall Equestrian Estate – on the simple logic that buyers get twice the house for half the Cape Town price. That said, Cape Town isn't exactly struggling, with inner-city development value jumping 41% to R12.8 billion, backed by R5.5bn in transit upgrades. Two cities, two different bets on South African property, both landing in the same week.</p>
+<a class="read" href="https://currencynews.co.za/joburgs-grand-property-revival/" target="_blank" rel="noopener">Read on Currency News &amp;#8594; &rarr;</a>
+<div class="clear"></div>
+</div><div class="story">
+<div class="thumb" style="background-color:#1a2a1a">&amp;#127891;</div>
+<div class="source">Ivyn Sambo – The Chair Brief</div>
+<h2>The property trade quietly beating the JSE this year</h2>
+<p class="body">While everyone's watching the stock market for excitement, the smarter money may be sitting in flats near university campuses. South Africa is short more than 500,000 student beds, and that gap is pushing rental yields on student accommodation to 15–20% – roughly double what a standard buy-to-let manages elsewhere in the country. Ivyn Sambo lays out the entry points, from buying a flat near Wits, UCT, UP or UKZN and leasing it per room, to buying into large purpose-built developments like Growthpoint's 2,400-bed project near UKZN – for anyone with capital and a tolerance for shared kitchens.</p>
+<a class="read" href="https://ivynsambo.co.za/the-chair-brief" target="_blank" rel="noopener">Subscribe to The Chair Brief &amp;#8594; &rarr;</a>
+<div class="clear"></div>
+</div><div class="story">
+<div class="thumb" style="background-color:#1a2a3a">&amp;#9995;</div>
+<div class="source">EWN – 702/CapeTalk's The Money Show</div>
+<h2>The rental property maths most landlords never actually do</h2>
+<p class="body">Buying a flat to rent out sounds like an easy way to build wealth, until someone runs the actual numbers. Certified financial planner Warren Ingram's example: a R1.2 million apartment carries roughly a R12,000 bond plus another R4,000 in rates, levies and upkeep, against R8,500 in rent – meaning most landlords are quietly losing money every month before a single vacancy, non-paying tenant or capital gains tax bill on sale even enters the picture. His actual test: calculate the after-cost rental yield, and don't sign anything unless it beats inflation. After a week of property enthusiasm, possibly the most useful number in the whole newsletter.</p>
+<a class="read" href="https://www.ewn.co.za/2026/07/29/hidden-costs-that-can-turn-rental-property-into-a-money-pit" target="_blank" rel="noopener">Read on EWN &amp;#8594; &rarr;</a>
+<div class="clear"></div>
+</div><div class="story">
+<div class="thumb" style="background-color:#0a1a2a">&amp;#128188;</div>
+<div class="source">EWN</div>
+<h2>Why UK companies are quietly hiring your neighbour</h2>
+<p class="body">Just in case you need some Pounds to finance your latest property buy, it turns out UK employers are increasingly filling roles with South African remote workers – and not just in tech. EWN's rundown covers sales, customer service and even teaching roles, with some workers earning meaningfully more in rands than they would locally. Worth knowing whether you're job-hunting or just wondering why your favourite barista suddenly keeps UK office hours.</p>
+<a class="read" href="https://www.ewn.co.za/2026/07/27/uk-companies-increasingly-hiring-south-africans-to-work-from-home-and-paying-them-well" target="_blank" rel="noopener">Read on EWN &amp;#8594; &rarr;</a>
+<div class="clear"></div>
+</div><div class="story">
+<div class="thumb" style="background-color:#2a1a0a">&amp;#9992;</div>
+<div class="source">Business Day</div>
+<h2>So who is filling all those houses?</h2>
+<p class="body">Turns out the world still wants to visit South Africa, with nearly 1.1 million foreign visitors landing in June alone, up 4.3% on last year, despite airfares climbing on the back of Middle East disruption. Turkish Airlines is adding flights – up to 20 a week from October – and Latam just opened a direct S&amp;atilde;o Paulo–Cape Town route, the kind of route an airline doesn't add on a whim. Whatever the rest of the world thinks it knows about South Africa from the headlines, the booking numbers tell a different story.</p>
+<a class="read" href="https://www.businessday.co.za/economy/2026-07-30-sun-surf-and-safari-why-sa-tourism-is-still-winning-despite-a-slowdown-in-june/" target="_blank" rel="noopener">Read on Business Day &amp;#8594; &rarr;</a>
+<div class="clear"></div>
+</div><div class="box ghost"><div class="box-inner"><img class="ghost-logo" src="../assets/ghost_mail.jpg" alt="Ghost Mail"><div class="kicker">Ghost Bites &ndash; Markets</div><p>Ghost Bites – Markets</p><p>It's been a big few weeks for corporate reinvention. Anglo American has picked a preferred bidder for its 85% stake in De Beers – a consortium led by the diamond house's own former boss, potentially with Botswana and Namibia coming in as equity partners, in a deal that could finally close the book on Anglo's century-long diamond era. Closer to home, Spar is going upmarket, rolling out "Spar Gourmet" stores aimed at its most affluent shoppers, with the first now open in KZN's Zimbali Oasis and more planned for Cape Town and Joburg through 2026 – proof that even in a squeezed economy, someone's willing to pay more for nicer groceries. And Datatec's Westcon refinancing, delayed once already, has slipped again, from mid-July to early August – sometimes "we're getting to it" is a company's whole personality.</p><div class="links"><a href="https://www.ghostmail.co.za/category/ghost-bites/" target="_blank" rel="noopener">More on Ghost Mail → &rarr;</a></div></div></div><div class="box"><div class="box-inner"><div class="kicker">What&rsquo;s On This Weekend</div><p>Local Dispatches</p><p>Gauteng – A maze, a manor, and a very particular kind of buyer</p><p>A 12,000m² English manor in Pretoria's Cornwall Hill estate – complete with a maze, museum-worthy artwork and reportedly Ralph Lauren wallpaper – is on the market through Pam Golding. The price isn't public, but the running costs are: R7,140 a month in rates and taxes, plus another R4,150 in levies, before a single light gets switched on. A reminder that "if you have to ask" cuts both ways.</p><p>Western Cape/Garden Route – Off-grid, fynbos-framed, and the new face of Cape luxury</p><p>Petrichor, an architect-designed home tucked into the fynbos outside Plettenberg Bay, is fully off-grid – solar, borehole water, no chandeliers – and increasingly representative of where Garden Route luxury is heading. If old-money Cape Town is marble and security gates, this is its quieter, more sunburnt cousin.</p><p>Western Cape – The R9 million "fixer-upper" that broke the internet – and still sold</p><p>A four-bedroom Sea Point house went up for sale looking, by all accounts, like it needed a bucket and a prayer – mould, water damage, the lot – and the internet had feelings about the R9 million price tag. It sold anyway, for the full asking price, which either says something about Cape Town property or absolutely nothing new at all.</p><p>KZN – Durban's biggest hotel is betting big on the Golden Mile's comeback</p><p>Southern Sun is pouring R250 million into its biggest hotel – the Elangeni-Maharani on Durban's Golden Mile – in its most significant refurb in decades, backed by a fresh multi-decade lease with eThekwini Municipality. Someone, clearly, is betting the headlines about the city have been worse than the reality.</p><div class="links"><a href="https://dailyinvestor.com/property/141558/inside-the-12000m%c2%b2-south-african-manor-house-with-famous-artworks-ralph-lauren-wallpaper-and-its-own-maze/" target="_blank" rel="noopener">Daily Investor → &rarr;</a><a href="https://currencynews.co.za/how-the-south-african-luxury-home-is-being-reimagined/" target="_blank" rel="noopener">Read on Currency News → &rarr;</a><a href="https://iol.co.za/business/property/2026-07-17-a-real-estate-joke-sea-point-fixer-upper-sells-for-r9-million-sparking-outrage-online/" target="_blank" rel="noopener">Read on IOL → &rarr;</a><a href="https://www.moneyweb.co.za/investing/property/southern-sun-starts-r250m-overhaul-of-its-biggest-hotel/" target="_blank" rel="noopener">Read on Moneyweb → &rarr;</a></div></div></div><div class="box"><div class="box-inner"><div class="kicker">Everyone&rsquo;s Talking About</div><p>Everyone's Talking About</p><p>Are diamonds still forever?</p><p>De Beers spent 137 years convincing the world a diamond is forever and pricing accordingly. But technology has not-so-quietly changed the game, with lab-grown diamonds – chemically identical to the real thing, but up to 73% cheaper – already making up close to half of US engagement ring sales. The split in sales is generational, with Gen Z buyers largely not caring where the sparkle comes from, millennials close to 50/50, and the oldies the only ones still buying the brand story.</p><p>It's just one of the reasons Anglo American has written down De Beers' value by $6.8 billion in three years, and the business which once carried a $4.9 billion price tag is now selling for around $1 billion.</p><div class="links"><a href="https://rapaport.com/news/anglo-american-slashes-de-beers-value-in-half/" target="_blank" rel="noopener">Read on Rapaport → &rarr;</a><a href="https://www.aol.com/news/lab-grown-diamonds-now-cost-190021227.html" target="_blank" rel="noopener">· More coverage → &rarr;</a></div></div></div><div class="box and-finally"><div class="box-inner"><div class="kicker">And finally&hellip;</div><p>And finally…</p><p>Tonight's the night to actually look up. Two meteor showers – the Southern Delta Aquariids and the Alpha Capricornids – both peak tonight, 31 July, with SA's dry winter air and long nights making conditions about as good as they get. Find somewhere dark, give your eyes 20 minutes to adjust, and you're in business. No app, no subscription, no fine print.</p><div class="links"><a href="https://www.getaway.co.za/news/four-meteor-showers-to-light-up-south-africas-skies/" target="_blank" rel="noopener">Read on Getaway → &rarr;</a></div></div></div></div></div>
+
+<div class="site-footer"><div class="bar">The Shortlist is published weekly by <em>Media Connect</em>. Stories link to source publications.<br>Curated with ♥ · Not financial advice</div></div>
+
+</body></html>

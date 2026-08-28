@@ -1,0 +1,140 @@
+<!DOCTYPE html><html lang="en"><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1.0"><title>14 August 2026 — the Shortlist</title>
+<style>
+:root{--gold:#c9a84c;--dark:#1a1a1a;--cream:#f4f1ec;--card:#faf8f4;--body:#555555;--purple:#8B2FC9;--line:#f0ece4;--sub:#e8e3d8}
+*{margin:0;padding:0;box-sizing:border-box}
+body{font-family:Arial,Helvetica,sans-serif;background:var(--cream);color:#333;line-height:1.6;-webkit-font-smoothing:antialiased}
+/* site nav */
+.nav{background:var(--dark);position:sticky;top:0;z-index:50;box-shadow:0 1px 0 rgba(0,0,0,.2)}
+.nav .inner{max-width:960px;margin:0 auto;padding:0 20px;display:flex;align-items:center;justify-content:space-between;height:52px}
+.nav .brand{font-family:Georgia,'Times New Roman',serif;font-size:1.15rem;color:#fff;text-decoration:none}
+.nav .brand em{color:var(--gold);font-style:italic}
+.nav .links a{color:#ccc;text-decoration:none;font-size:.82rem;font-weight:bold;letter-spacing:.08em;text-transform:uppercase;padding:6px 10px;border-radius:4px;margin-left:2px}
+.nav .links a:hover{color:#fff;background:rgba(255,255,255,.08)}
+.nav .links a.active{color:var(--gold)}
+/* layout */
+.wrap{max-width:960px;margin:0 auto;padding:28px 20px 64px}
+.grid{display:grid;grid-template-columns:1fr 300px;gap:28px;align-items:start}
+.main{min-width:0;background:#fff;border-radius:6px;box-shadow:0 1px 4px rgba(0,0,0,.06);overflow:hidden}
+/* newsletter header */
+.news-header{background:var(--dark);padding:30px 34px 24px;text-align:center}
+.news-header img.logo{width:250px;max-width:70%;height:auto;display:block;margin:0 auto}
+.news-header .date{font-family:Arial,sans-serif;font-size:11px;color:#aaaaaa;letter-spacing:.1em;text-transform:uppercase;margin:12px 0 0}
+.news-header .badge{display:inline-block;background:var(--gold);color:var(--dark);font-size:9px;font-weight:bold;letter-spacing:.12em;text-transform:uppercase;padding:3px 10px;margin-top:8px;border-radius:2px}
+/* editor's note */
+.editor-note{border-left:3px solid var(--gold);background:var(--card);padding:20px 22px;margin:20px 34px 0}
+.editor-note .kicker{font-size:11px;font-weight:bold;letter-spacing:.14em;text-transform:uppercase;color:var(--gold);margin:0 0 10px}
+.editor-note p{font-family:Georgia,'Times New Roman',serif;font-size:15px;line-height:1.65;color:#333;font-style:italic;margin:0 0 14px}
+.editor-note p:last-child{margin-bottom:0}
+/* this week divider */
+.divider{padding:0 34px;margin:22px 0 0}
+.divider .label{font-size:13px;font-weight:bold;letter-spacing:.14em;text-transform:uppercase;color:var(--gold);border-top:2px solid var(--gold);padding-top:14px}
+/* stories */
+.story{padding:22px 34px;border-bottom:1px solid var(--line)}
+.story:last-of-type{border-bottom:none}
+.story .thumb{float:left;width:56px;height:40px;border-radius:3px;margin-right:16px;margin-bottom:6px;display:flex;align-items:center;justify-content:center;font-size:22px}
+.story .source{font-size:9px;font-weight:bold;letter-spacing:.1em;text-transform:uppercase;color:var(--gold);margin:0 0 4px}
+.story h2{font-family:Georgia,'Times New Roman',serif;font-size:18px;font-weight:bold;line-height:1.3;color:var(--dark);margin:0 0 8px}
+.story p.body{font-size:13.5px;line-height:1.6;color:var(--body);margin:0 0 10px}
+.story a.read{font-size:11px;font-weight:bold;color:var(--dark);text-decoration:none;letter-spacing:.05em;text-transform:uppercase;border-bottom:1.5px solid var(--gold);padding-bottom:1px}
+.story a.read:hover{color:var(--gold)}
+.story .clear{clear:both}
+/* special boxes */
+.box{padding:20px 34px}
+.box .box-inner{border-left:3px solid var(--gold);background:var(--card);padding:20px 22px}
+.box.ghost .box-inner{border-left-color:var(--purple)}
+.box .kicker{font-size:11px;font-weight:bold;letter-spacing:.14em;text-transform:uppercase;color:var(--gold);margin:0 0 12px}
+.box.ghost .kicker{color:var(--purple)}
+.box.ghost .box-inner{background:#fff}
+.box p{font-size:13px;line-height:1.6;color:var(--body);margin:0 0 12px}
+.box p.lead{font-family:Georgia,'Times New Roman',serif;font-size:15px;font-weight:bold;color:var(--dark);margin:0 0 6px}
+.box .links{margin-top:6px}
+.box .links a{font-size:11px;font-weight:bold;color:var(--dark);text-decoration:none;letter-spacing:.05em;text-transform:uppercase;border-bottom:1.5px solid var(--gold);padding-bottom:1px;margin-right:14px;white-space:nowrap}
+.box.ghost .links a{border-bottom-color:var(--purple)}
+.box .sub{margin-top:14px;padding-top:14px;border-top:1px solid var(--sub)}
+.box.and-finally p{font-family:Georgia,'Times New Roman',serif;font-size:16px;line-height:1.65;color:var(--dark)}
+.box.and-finally .kicker{margin-bottom:10px}
+/* ghost mail logo */
+.ghost-logo{display:block;width:110px;height:auto;margin-bottom:12px}
+/* sidebar */
+.side{display:flex;flex-direction:column;gap:18px}
+.side .card{background:#fff;border-radius:6px;padding:18px;box-shadow:0 1px 3px rgba(0,0,0,.05)}
+.side .card h3{font-size:10px;font-weight:bold;letter-spacing:.14em;text-transform:uppercase;color:var(--gold);margin:0 0 12px;padding-bottom:8px;border-bottom:1px solid var(--line)}
+.side .ad{border:2px dashed var(--gold);background:#fffbe6;text-align:center;padding:26px 14px;color:#999;font-size:.82rem;border-radius:6px}
+.side .ad span{display:block;font-weight:bold;color:var(--gold);font-size:.66rem;text-transform:uppercase;letter-spacing:1px;margin-bottom:6px}
+.side input[type=email],.side input[type=text]{width:100%;padding:9px 10px;border:1px solid var(--line);border-radius:4px;font-size:.85rem;margin-bottom:8px}
+.side button{width:100%;padding:9px;background:var(--gold);color:var(--dark);border:none;border-radius:4px;font-weight:bold;font-size:.85rem;cursor:pointer}
+.side button.dark{background:var(--dark);color:#fff}
+.side .stars{font-size:1.35rem;color:var(--gold);letter-spacing:5px;text-align:center;margin:4px 0 6px}
+.side .stars a{text-decoration:none;color:var(--gold)}
+.side label{display:block;font-size:.82rem;color:#555;margin:7px 0}
+.side label input{margin-right:6px}
+.side .muted{font-size:.74rem;color:#999;margin-top:8px}
+.side .placeholder{background:#f7f5f0;border-radius:4px;padding:16px 12px;text-align:center;color:#aaa;font-size:.82rem}
+/* archive */
+.arch-head{background:#fff;border-radius:6px;box-shadow:0 1px 4px rgba(0,0,0,.06);padding:28px 34px;margin-bottom:20px}
+.arch-head h1{font-family:Georgia,serif;font-size:1.5rem;color:var(--dark)}
+.arch-head .kicker{font-size:11px;font-weight:bold;letter-spacing:.14em;text-transform:uppercase;color:var(--gold);margin-bottom:8px}
+.arch-head p{font-size:13px;color:var(--body);margin-top:8px;font-style:italic}
+.arch-item{background:#fff;border-radius:6px;box-shadow:0 1px 3px rgba(0,0,0,.05);padding:20px 24px;margin-bottom:12px;display:flex;align-items:center;justify-content:space-between;text-decoration:none;color:inherit;transition:box-shadow .15s}
+.arch-item:hover{box-shadow:0 3px 12px rgba(0,0,0,.1)}
+.arch-item .d{font-family:Georgia,serif;font-weight:bold;color:var(--gold);font-size:.9rem;white-space:nowrap;margin-right:16px}
+.arch-item .t{font-family:Georgia,serif;font-size:1.05rem;color:var(--dark);font-weight:bold}
+.arch-item .n{font-size:.78rem;color:#999;margin-top:2px}
+.arch-item .arrow{color:var(--gold);font-size:1.1rem;margin-left:14px}
+/* footer */
+.site-footer{max-width:960px;margin:0 auto;padding:20px;text-align:center;font-size:11px;color:#999}
+.site-footer .bar{background:var(--dark);color:#777;padding:20px;border-radius:6px;line-height:1.7}
+.site-footer .bar em{color:var(--gold);font-style:normal}
+@media(max-width:820px){.grid{grid-template-columns:1fr}.side{order:2}.story{padding:20px}.editor-note{margin:16px 20px 0}.divider{padding:0 20px}.news-header{padding:24px 20px 20px}}
+</style>
+</head><body>
+
+<div class="nav"><div class="inner">
+<a class="brand" href="../index.html">the <em>Shortlist</em></a>
+<div class="links"><a href="../index.html" class="">This Week</a><a href="../archive.html" class="active">Archive</a></div>
+</div></div>
+
+<div class="wrap"><div class="main" style="max-width:720px;margin:0 auto"><div class="news-header">
+<img class="logo" src="../assets/logo.png" alt="the Shortlist">
+<div class="date">14 August 2026 &nbsp;&middot;&nbsp; Your week, curated</div>
+<div class="badge">National Edition</div>
+</div><div class="editor-note"><div class="kicker">Editor&rsquo;s Note</div><p>August is Women's Month, and for once the data actually cooperates. Women now make up the single largest group of solo property buyers under 35 – ahead of couples, ahead of men buying alone – and, separately, quietly outperform men as investors once you strip away the noise. Two unrelated datasets, same conclusion: patience and follow-through beat bravado, in property and on the JSE alike.</p><p>Elsewhere, Dominique Olivier has a sharp piece on how the business world has cashed in on anxiety, while nature trumped nuclear in France when a swarm of jellyfish knocked a fifth of the country's nuclear capacity offline – proof that the biggest threat to critical infrastructure isn't always the one on the risk register.</p><p>Last but not least, if you're looking for something to do this slightly warmer weekend, check out our pick of What's On below. And if you're still chasing the snow, we've got the full rundown of where it's – barely – still hanging around.</p><p>Whatever you decide to do, do it well. And if you liked what you read here, please subscribe. We are continuing to evolve, and hope that whatever we do, it adds in some way to your life.</p></div><div class="divider"><div class="label">This Week</div></div><div class="story">
+<div class="thumb" style="background-color:#2a2210">&amp;#128200;</div>
+<div class="source">Financial Mail</div>
+<h2>Why women investors outperform men</h2>
+<p class="body">New research confirms what a lot of people quietly suspected: women's portfolios beat men's over time – not through sharper stock-picking, but because they trade less, take fewer impulsive risks, and actually stick to the plan they made. It's a tidy piece of evidence that patience beats adrenaline in investing, and a good one to have on hand next time someone at a braai starts confidently explaining the market to you.</p>
+<a class="read" href="https://fm.co.za/investing/2026/08/12/why-women-investors-quietly-outperform-men/" target="_blank" rel="noopener">Read on Financial Mail &amp;#8594; &rarr;</a>
+<div class="clear"></div>
+</div><div class="story">
+<div class="thumb" style="background-color:#2a1a0a">&amp;#127968;</div>
+<div class="source">Lightstone</div>
+<h2>Young women top the property charts</h2>
+<p class="body">For the first time on record, young women buying property solo (34%) now outnumber both mixed-gender couples (31%) and men buying alone (33%) among under-35 buyers – up from just 20% in 2005. It's less a change in taste than a change in timeline: women are reaching financial independence, and getting there before anyone waits for a partner to catch up.</p>
+<a class="read" href="https://corporate.lightstone.co.za/result/Articles/Profile-of-young-buyers-change-but-numbers-fall-24342" target="_blank" rel="noopener">Read on Lightstone &amp;#8594; &rarr;</a>
+<div class="clear"></div>
+</div><div class="story">
+<div class="thumb" style="background-color:#241a2a">&amp;#128587;</div>
+<div class="source">Ghost Mail Weekender – Dominique Olivier</div>
+<h2>The business of being anxious</h2>
+<p class="body">Calm and Headspace turned free meditation into a billion-dollar business, and the mental-health app market as a whole is now worth more than $9bn – on track to more than quadruple within a decade. Dominique Olivier digs into how anxiety itself became something you can subscribe to, and why a frightened, distracted population turns out to be extremely good for business.</p>
+<a class="read" href="https://www.ghostmail.co.za/the-economy-of-a-mean-world/" target="_blank" rel="noopener">Read on Ghost Mail &amp;#8594; &rarr;</a>
+<div class="clear"></div>
+</div><div class="story">
+<div class="thumb" style="background-color:#0a1a2a">&amp;#9992;</div>
+<div class="source">Business Day</div>
+<h2>SA's new digital border, explained</h2>
+<p class="body">The government's new Electronic Travel Authorisation lets eligible travellers apply online – a selfie, a passport scan, some light biometric checking – and get approved within 24 hours, no embassy visit required. More than 216,000 people used it in the pilot ahead of SA's G20 presidency, with over 6,000 fraudulent applications already caught and blocked. Ramaphosa is framing it as an economic intervention rather than an immigration tweak: every visa headache, the logic goes, is one more reason an investor or tourist picks somewhere else.</p>
+<a class="read" href="https://www.businessday.co.za/news/2026-08-12-ramaphosa-launches-digital-travel-system-to-make-sa-entry-faster-more-secure/" target="_blank" rel="noopener">Read on Business Day &amp;#8594; &rarr;</a>
+<div class="clear"></div>
+</div><div class="story">
+<div class="thumb" style="background-color:#0a2a2a">&amp;#128225;</div>
+<div class="source">Business Day</div>
+<h2>Fibre you buy like airtime</h2>
+<p class="body">Frogfoot Networks has launched a contract-free, pay-as-you-go fibre service in Lotus Gardens, Tshwane, strung along existing poles with no credit checks and no lock-in – just connectivity you top up when you can afford it. It's one suburb so far, but if the model holds, it's the kind of unglamorous infrastructure story that could genuinely change who gets to be online in this country.</p>
+<a class="read" href="https://www.businesslive.co.za/companies/2026-08-13-frogfoot-network-enters-pay-as-you-go-fibre-market/" target="_blank" rel="noopener">Read on Business Day &amp;#8594; &rarr;</a>
+<div class="clear"></div>
+</div><div class="box ghost"><div class="box-inner"><img class="ghost-logo" src="../assets/ghost_mail.jpg" alt="Ghost Mail"><div class="kicker">Ghost Bites &ndash; Markets</div><p>Ghost Bites – Markets</p><p>This week's JSE mining news came with the usual mix of triumph and whiplash. Southern Palladium jumped roughly 20% after securing the mining right for its Bengwenyama PGM-chrome project in Limpopo – a real milestone, undercut only by the project sitting inside a subsidiary called "Miracle Upon Miracle Investments." Merafe has done even better, up 35% since January on strong chrome ore prices and an Eskom lifeline keeping its smelters running. Gold Fields wasn't so lucky – despite releasing a trading statement indicating a 70–90% increase in headline earnings per share, its share price is down 12% this year, proof that mining shares chase today's commodity price. Meanwhile Impala Platinum delivered proper whiplash: earnings are set to hit R26.52 a share, up from just 82 cents the year before – a swing of more than 30 times – but its share price is down 22% this year.</p><p>Elsewhere, Spur just learned what an unsigned handshake deal can cost: a near-decade fight with a ribs supplier has ended in a R129.5 million provision, denting full-year earnings by over a third, even though the restaurant business itself was quietly having a good year – not the type of rib deal you expect at the chain. And a genuinely striking number from Shoprite: full-year earnings are set to grow by up to 14.7%, while its delivery arm Sixty60 grew revenue to R25.5 billion, up 34.5% – now bigger than Takealot's online retail business. The Checkers app may quietly be winning the online shopping war.</p><div class="links"><a href="https://www.ghostmail.co.za/category/ghost-bites/" target="_blank" rel="noopener">More on Ghost Mail → &rarr;</a></div></div></div><div class="box"><div class="box-inner"><div class="kicker">What&rsquo;s On This Weekend</div><p>Editor's Note</p><p>August is Women's Month, and for once the data actually cooperates. Women now make up the single largest group of solo property buyers under 35 – ahead of couples, ahead of men buying alone – and, separately, quietly outperform men as investors once you strip away the noise. Two unrelated datasets, same conclusion: patience and follow-through beat bravado, in property and on the JSE alike.</p><p>Elsewhere, Dominique Olivier has a sharp piece on how the business world has cashed in on anxiety, while nature trumped nuclear in France when a swarm of jellyfish knocked a fifth of the country's nuclear capacity offline – proof that the biggest threat to critical infrastructure isn't always the one on the risk register.</p><p>Last but not least, if you're looking for something to do this slightly warmer weekend, check out our pick of What's On below. And if you're still chasing the snow, we've got the full rundown of where it's – barely – still hanging around.</p><p>Whatever you decide to do, do it well. And if you liked what you read here, please subscribe. We are continuing to evolve, and hope that whatever we do, it adds in some way to your life.</p></div></div><div class="box"><div class="box-inner"><div class="kicker">Everyone&rsquo;s Talking About</div><p>Everyone's Talking About</p><p>The week South Africa turned white</p><p>A cold front colliding with a cut-off low buried the high country from the Drakensberg to the Cape fold mountains last weekend – the N3 closed at Van Reenen, the N2 shut near Kokstad, and Johannesburg didn't crack 4°C. SAWS forecaster Tokelo Chiloane called it a classic "double whammy" system, and the photos backed him up: snow on Franschhoek and Swartberg passes, on Joburg rooftops in Bedfordview and Oakdene, on the road up to Lesotho's Katse Dam.</p><p>Chasing it this weekend? Most of the low-lying snow has already melted, so don't expect a repeat at sea level. Afriski, on the Lesotho border, is the one place still holding a base – both lifts running, pistes open – and stays open through end of August, though no fresh snow is forecast (Tiffindell, SA's other ski resort, has been closed since 2020 and never reopened). For scenery over skiing, the Swartberg and Franschhoek passes are worth the drive if you want to see where it fell, mud and all.</p><div class="links"><a href="https://mg.co.za/environment/2026-08-11-snow-storms-and-flooding-hits-south-africa-as-cold-front-and-cut-off-low-collide/" target="_blank" rel="noopener">Read on Mail &amp; Guardian → &rarr;</a></div></div></div><div class="box and-finally"><div class="box-inner"><div class="kicker">And finally&hellip;</div><p>And finally…</p><p>Jellyfish 1, French nuclear industry 0. A swarm of jellyfish drifted into the cooling-water intake at a nuclear plant in France this week, forcing a shutdown that knocked a fifth of the country's nuclear capacity offline. Power grid engineers versus gelatinous sea creatures – the jellyfish won this round, and it's not even the first time.</p><div class="links"><a href="https://witness.co.za/news/2026/08/12/jellyfish-knock-one-fifth-of-frances-nuclear-capacity-offline/" target="_blank" rel="noopener">Read on The Witness → &rarr;</a></div></div></div></div></div>
+
+<div class="site-footer"><div class="bar">The Shortlist is published weekly by <em>Media Connect</em>. Stories link to source publications.<br>Curated with ♥ · Not financial advice</div></div>
+
+</body></html>

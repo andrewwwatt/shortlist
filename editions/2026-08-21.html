@@ -1,0 +1,140 @@
+<!DOCTYPE html><html lang="en"><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1.0"><title>21 August 2026 — the Shortlist</title>
+<style>
+:root{--gold:#c9a84c;--dark:#1a1a1a;--cream:#f4f1ec;--card:#faf8f4;--body:#555555;--purple:#8B2FC9;--line:#f0ece4;--sub:#e8e3d8}
+*{margin:0;padding:0;box-sizing:border-box}
+body{font-family:Arial,Helvetica,sans-serif;background:var(--cream);color:#333;line-height:1.6;-webkit-font-smoothing:antialiased}
+/* site nav */
+.nav{background:var(--dark);position:sticky;top:0;z-index:50;box-shadow:0 1px 0 rgba(0,0,0,.2)}
+.nav .inner{max-width:960px;margin:0 auto;padding:0 20px;display:flex;align-items:center;justify-content:space-between;height:52px}
+.nav .brand{font-family:Georgia,'Times New Roman',serif;font-size:1.15rem;color:#fff;text-decoration:none}
+.nav .brand em{color:var(--gold);font-style:italic}
+.nav .links a{color:#ccc;text-decoration:none;font-size:.82rem;font-weight:bold;letter-spacing:.08em;text-transform:uppercase;padding:6px 10px;border-radius:4px;margin-left:2px}
+.nav .links a:hover{color:#fff;background:rgba(255,255,255,.08)}
+.nav .links a.active{color:var(--gold)}
+/* layout */
+.wrap{max-width:960px;margin:0 auto;padding:28px 20px 64px}
+.grid{display:grid;grid-template-columns:1fr 300px;gap:28px;align-items:start}
+.main{min-width:0;background:#fff;border-radius:6px;box-shadow:0 1px 4px rgba(0,0,0,.06);overflow:hidden}
+/* newsletter header */
+.news-header{background:var(--dark);padding:30px 34px 24px;text-align:center}
+.news-header img.logo{width:250px;max-width:70%;height:auto;display:block;margin:0 auto}
+.news-header .date{font-family:Arial,sans-serif;font-size:11px;color:#aaaaaa;letter-spacing:.1em;text-transform:uppercase;margin:12px 0 0}
+.news-header .badge{display:inline-block;background:var(--gold);color:var(--dark);font-size:9px;font-weight:bold;letter-spacing:.12em;text-transform:uppercase;padding:3px 10px;margin-top:8px;border-radius:2px}
+/* editor's note */
+.editor-note{border-left:3px solid var(--gold);background:var(--card);padding:20px 22px;margin:20px 34px 0}
+.editor-note .kicker{font-size:11px;font-weight:bold;letter-spacing:.14em;text-transform:uppercase;color:var(--gold);margin:0 0 10px}
+.editor-note p{font-family:Georgia,'Times New Roman',serif;font-size:15px;line-height:1.65;color:#333;font-style:italic;margin:0 0 14px}
+.editor-note p:last-child{margin-bottom:0}
+/* this week divider */
+.divider{padding:0 34px;margin:22px 0 0}
+.divider .label{font-size:13px;font-weight:bold;letter-spacing:.14em;text-transform:uppercase;color:var(--gold);border-top:2px solid var(--gold);padding-top:14px}
+/* stories */
+.story{padding:22px 34px;border-bottom:1px solid var(--line)}
+.story:last-of-type{border-bottom:none}
+.story .thumb{float:left;width:56px;height:40px;border-radius:3px;margin-right:16px;margin-bottom:6px;display:flex;align-items:center;justify-content:center;font-size:22px}
+.story .source{font-size:9px;font-weight:bold;letter-spacing:.1em;text-transform:uppercase;color:var(--gold);margin:0 0 4px}
+.story h2{font-family:Georgia,'Times New Roman',serif;font-size:18px;font-weight:bold;line-height:1.3;color:var(--dark);margin:0 0 8px}
+.story p.body{font-size:13.5px;line-height:1.6;color:var(--body);margin:0 0 10px}
+.story a.read{font-size:11px;font-weight:bold;color:var(--dark);text-decoration:none;letter-spacing:.05em;text-transform:uppercase;border-bottom:1.5px solid var(--gold);padding-bottom:1px}
+.story a.read:hover{color:var(--gold)}
+.story .clear{clear:both}
+/* special boxes */
+.box{padding:20px 34px}
+.box .box-inner{border-left:3px solid var(--gold);background:var(--card);padding:20px 22px}
+.box.ghost .box-inner{border-left-color:var(--purple)}
+.box .kicker{font-size:11px;font-weight:bold;letter-spacing:.14em;text-transform:uppercase;color:var(--gold);margin:0 0 12px}
+.box.ghost .kicker{color:var(--purple)}
+.box.ghost .box-inner{background:#fff}
+.box p{font-size:13px;line-height:1.6;color:var(--body);margin:0 0 12px}
+.box p.lead{font-family:Georgia,'Times New Roman',serif;font-size:15px;font-weight:bold;color:var(--dark);margin:0 0 6px}
+.box .links{margin-top:6px}
+.box .links a{font-size:11px;font-weight:bold;color:var(--dark);text-decoration:none;letter-spacing:.05em;text-transform:uppercase;border-bottom:1.5px solid var(--gold);padding-bottom:1px;margin-right:14px;white-space:nowrap}
+.box.ghost .links a{border-bottom-color:var(--purple)}
+.box .sub{margin-top:14px;padding-top:14px;border-top:1px solid var(--sub)}
+.box.and-finally p{font-family:Georgia,'Times New Roman',serif;font-size:16px;line-height:1.65;color:var(--dark)}
+.box.and-finally .kicker{margin-bottom:10px}
+/* ghost mail logo */
+.ghost-logo{display:block;width:110px;height:auto;margin-bottom:12px}
+/* sidebar */
+.side{display:flex;flex-direction:column;gap:18px}
+.side .card{background:#fff;border-radius:6px;padding:18px;box-shadow:0 1px 3px rgba(0,0,0,.05)}
+.side .card h3{font-size:10px;font-weight:bold;letter-spacing:.14em;text-transform:uppercase;color:var(--gold);margin:0 0 12px;padding-bottom:8px;border-bottom:1px solid var(--line)}
+.side .ad{border:2px dashed var(--gold);background:#fffbe6;text-align:center;padding:26px 14px;color:#999;font-size:.82rem;border-radius:6px}
+.side .ad span{display:block;font-weight:bold;color:var(--gold);font-size:.66rem;text-transform:uppercase;letter-spacing:1px;margin-bottom:6px}
+.side input[type=email],.side input[type=text]{width:100%;padding:9px 10px;border:1px solid var(--line);border-radius:4px;font-size:.85rem;margin-bottom:8px}
+.side button{width:100%;padding:9px;background:var(--gold);color:var(--dark);border:none;border-radius:4px;font-weight:bold;font-size:.85rem;cursor:pointer}
+.side button.dark{background:var(--dark);color:#fff}
+.side .stars{font-size:1.35rem;color:var(--gold);letter-spacing:5px;text-align:center;margin:4px 0 6px}
+.side .stars a{text-decoration:none;color:var(--gold)}
+.side label{display:block;font-size:.82rem;color:#555;margin:7px 0}
+.side label input{margin-right:6px}
+.side .muted{font-size:.74rem;color:#999;margin-top:8px}
+.side .placeholder{background:#f7f5f0;border-radius:4px;padding:16px 12px;text-align:center;color:#aaa;font-size:.82rem}
+/* archive */
+.arch-head{background:#fff;border-radius:6px;box-shadow:0 1px 4px rgba(0,0,0,.06);padding:28px 34px;margin-bottom:20px}
+.arch-head h1{font-family:Georgia,serif;font-size:1.5rem;color:var(--dark)}
+.arch-head .kicker{font-size:11px;font-weight:bold;letter-spacing:.14em;text-transform:uppercase;color:var(--gold);margin-bottom:8px}
+.arch-head p{font-size:13px;color:var(--body);margin-top:8px;font-style:italic}
+.arch-item{background:#fff;border-radius:6px;box-shadow:0 1px 3px rgba(0,0,0,.05);padding:20px 24px;margin-bottom:12px;display:flex;align-items:center;justify-content:space-between;text-decoration:none;color:inherit;transition:box-shadow .15s}
+.arch-item:hover{box-shadow:0 3px 12px rgba(0,0,0,.1)}
+.arch-item .d{font-family:Georgia,serif;font-weight:bold;color:var(--gold);font-size:.9rem;white-space:nowrap;margin-right:16px}
+.arch-item .t{font-family:Georgia,serif;font-size:1.05rem;color:var(--dark);font-weight:bold}
+.arch-item .n{font-size:.78rem;color:#999;margin-top:2px}
+.arch-item .arrow{color:var(--gold);font-size:1.1rem;margin-left:14px}
+/* footer */
+.site-footer{max-width:960px;margin:0 auto;padding:20px;text-align:center;font-size:11px;color:#999}
+.site-footer .bar{background:var(--dark);color:#777;padding:20px;border-radius:6px;line-height:1.7}
+.site-footer .bar em{color:var(--gold);font-style:normal}
+@media(max-width:820px){.grid{grid-template-columns:1fr}.side{order:2}.story{padding:20px}.editor-note{margin:16px 20px 0}.divider{padding:0 20px}.news-header{padding:24px 20px 20px}}
+</style>
+</head><body>
+
+<div class="nav"><div class="inner">
+<a class="brand" href="../index.html">the <em>Shortlist</em></a>
+<div class="links"><a href="../index.html" class="">This Week</a><a href="../archive.html" class="active">Archive</a></div>
+</div></div>
+
+<div class="wrap"><div class="main" style="max-width:720px;margin:0 auto"><div class="news-header">
+<img class="logo" src="../assets/logo.png" alt="the Shortlist">
+<div class="date">21 August 2026 &nbsp;&middot;&nbsp; Your week, curated</div>
+<div class="badge">National Edition</div>
+</div><div class="editor-note"><div class="kicker">Editor&rsquo;s Note</div><p>This week, it's all about the gap between perception and reality. From the perceived silver bullet of AI in the workplace – a new study shows it's not always – to the gap between what the economic data says and what people actually feel in their bank balance.</p><p>Elsewhere, the same gap shows up in the numbers: DebtBusters' latest index shows the squeeze has moved up the income ladder to those earning over R50,000 a month, Malaika Mahlatsi makes the case that an entire generation has swapped big milestones for little treats, and Loose Canon has a name for the mood itself – a "vibecession", the recession that's mostly in your head.</p><p>.</p></div><div class="divider"><div class="label">This Week</div></div><div class="story">
+<div class="thumb" style="background-color:#241a2a">🎯</div>
+<div class="source">Ghost Mail – Dominique Olivier</div>
+<h2>A word of caution before you employ Claude</h2>
+<p class="body">Businesses are increasingly rolling out AI and cutting human jobs in the same breath, treating the two as if one simply follows the other. Ghost Mail's Dominique Olivier digs into what that combination actually costs: a new University of Pittsburgh study of more than 3,200 firms found that employee goodwill toward AI collapses the moment AI-linked layoffs are announced – and that goodwill turns out to be one of the strongest predictors of whether the AI actually delivers. Handle the cuts carelessly, in other words, and you can sink the very tool you were trying to justify.</p>
+<a class="read" href="https://www.ghostmail.co.za/show-me-the-incentive-and-you-know-the-rest/" target="_blank" rel="noopener">Read on Ghost Mail → &rarr;</a>
+<div class="clear"></div>
+</div><div class="story">
+<div class="thumb" style="background-color:#2a1a1a">💳</div>
+<div class="source">EWN</div>
+<h2>Rich South Africans are drowning in debt</h2>
+<p class="body">Proving the old adage that some people have 'more money than sense', DebtBusters' latest quarterly index shows South Africans earning more than R50,000 a month now need 103% of their take-home pay just to service debt – more than they earn, before groceries even enter the picture. The irony is that it's their own creditworthiness to blame: banks are more willing to extend big home loans, vehicle finance and credit facilities to high earners, resulting in more temptation to over-spend.</p>
+<a class="read" href="https://www.ewn.co.za/rich-south-africans-are-drowning-in-debt-reveals-debt-index/" target="_blank" rel="noopener">Read on EWN → &rarr;</a>
+<div class="clear"></div>
+</div><div class="story">
+<div class="thumb" style="background-color:#2a220a">🍶</div>
+<div class="source">EWN – Malaika Mahlatsi</div>
+<h2>The "little treats economy"</h2>
+<p class="body">With youth unemployment at 33.6% – five million young South Africans currently out of work and out of training – the big milestones (a first home, especially) have quietly stopped feeling reachable for an entire generation. Under-35s make up 37% of the population but own just 7% of residential property. The result, this piece argues, is a "little treats economy": small, deliberate indulgences standing in for the milestones that used to signal you'd arrived. A sharp read on why a generation's spending habits look the way they do.</p>
+<a class="read" href="https://www.ewn.co.za/malaika-mahlatsi-rising-youth-unemployment-has-given-birth-to-the-tragic-little-treats-economy-in-sa/" target="_blank" rel="noopener">Read on EWN → &rarr;</a>
+<div class="clear"></div>
+</div><div class="story">
+<div class="thumb" style="background-color:#1a2a2a">📊</div>
+<div class="source">Loose Canon</div>
+<h2>A "vibecession" – the recession between your ears</h2>
+<p class="body">South Africa's economic indicators have been quietly improving – inflation easing, rates holding steady, growth ticking along. So why does everyone still feel broke? Loose Canon calls it a "vibecession": a gap between what the data says and what people actually feel in their bank balance, running on years of accumulated financial anxiety rather than anything currently happening in the economy. A sharp, slightly wry read on why "the economy is fine" never lands the way economists expect.</p>
+<a class="read" href="https://www.timcohen.co.za/loose-ca-vibecession-the-recession-between-your-ears/" target="_blank" rel="noopener">Read on Loose Canon → &rarr;</a>
+<div class="clear"></div>
+</div><div class="story">
+<div class="thumb" style="background-color:#2a1a0a">🍺</div>
+<div class="source">Financial Mail</div>
+<h2>How Africa's favourite beers got their names</h2>
+<p class="body">African beer sales grew faster than anywhere else in the world last year – and the names behind that growth have better stories than the marketing departments probably intended. Madagascar's Three Horses Lager was named for a colonial-era horse-racing town. Chibuku Shake Shake is called that because you genuinely have to shake it before you drink it. A tour through the continent's most-loved beer brands, from Castle to Tusker, and the odd history behind each label.</p>
+<a class="read" href="https://fm.co.za/news-and-fox/2026-08-20-how-africa-s-favourite-beers-got-their-names/" target="_blank" rel="noopener">Read on Financial Mail → &rarr;</a>
+<div class="clear"></div>
+</div><div class="box"><div class="box-inner"><div class="kicker">Lifestyle</div><p>Lifestyle</p><p>Business Day – Gugu Lourie</p><p>The 1,200-strong pest control team at a Stellenbosch wine estate</p><p>While companies elsewhere debate whether AI or robots should take over the workforce, Vergenoegd Löw Wine Estate has stuck with an older solution. Twice a day, 1,200 Indian Runner ducks march through the vineyards eating snails and insects and fertilising as they go – no pesticides, no robots required. The 330-year-old estate is a WWF Conservation Champion and one of the world's Top 100 Sustainable Hotels. Proof the old ways still work.</p><p>And if you feel like a real feel-good day out, there's very little that beats watching over a thousand ducks waddle past your table – while you sip on a suitably chilled Chenin, of course.</p><div class="links"><a href="https://www.businessday.co.za/opinion/2026-08-20-gugu-lourie-winerys-eco-army-shows-nature-trumps-robots-in-farming/" target="_blank" rel="noopener">Read on Business Day → &rarr;</a></div></div></div><div class="box ghost"><div class="box-inner"><img class="ghost-logo" src="../assets/ghost_mail.jpg" alt="Ghost Mail"><div class="kicker">Ghost Bites &ndash; Markets</div><p>Ghost Bites – Markets</p><p>BHP is the Goliath of JSE mining – a R3.7 trillion giant now leaning on copper, which just delivered more than half its earnings for the first time. DRDGOLD is the David that isn't even fighting the same battle: at R39 billion, roughly 1% of BHP's size, it's stuck stubbornly to gold. But it's just paid a dividend for the 19th year running, something Goliath can't claim, helped by a gold price up 40% over the past year. Different weight classes, same lesson: the smaller player can still quietly win.</p><p>In banking, Standard Bank is beating Absa on efficiency. Standard Bank's costs have grown slower than its revenue for ten straight periods (bankers call this "positive jaws"), while Absa faces the opposite this year – costs outpacing income. The gap shows up in the numbers that matter: Standard Bank turns shareholder money into profit at 19.8%, well ahead of Absa's 15.0%. Both banks' reports proudly feature maps of Africa, but both still earn more profit from South Africa alone than the rest of the continent combined.</p><p>And then there's Spar, having the kind of week only a supermarket group in turnaround mode can have. Chairman Mike Bosman and deputy chair Dr Shirley Zinn both resigned after months of increasingly public friction with the group's franchisees, sending the share price to a fresh 52-week low. When the people at the top start heading for the exits, it's rarely a great sign for whoever's left holding the trolley.</p><div class="links"><a href="https://www.ghostmail.co.za/category/ghost-bites/" target="_blank" rel="noopener">More on Ghost Mail → &rarr;</a></div></div></div><div class="box"><div class="box-inner"><div class="kicker">What&rsquo;s On This Weekend</div><p>Editor's Note</p><p>This week, it's all about the gap between perception and reality. From the perceived silver bullet of AI in the workplace – a new study shows it's not always – to the gap between what the economic data says and what people actually feel in their bank balance.</p><p>Elsewhere, the same gap shows up in the numbers: DebtBusters' latest index shows the squeeze has moved up the income ladder to those earning over R50,000 a month, Malaika Mahlatsi makes the case that an entire generation has swapped big milestones for little treats, and Loose Canon has a name for the mood itself – a "vibecession", the recession that's mostly in your head.</p><p>.</p><div class="links"><a href="https://sawubona.everlytic.net/public/forms/h/8w0odM0DxUejsU5A/ZmU5NmNlMTk3MzliNDExNzc5ZDgwMDNiN2U0MzFmODUwOTRhYjU2Yg==" target="_blank" rel="noopener">Let's hope perception and reality meet up on Saturday, when the Boks take on the All Blacks. If you don't have a ticket (who does?), we've suggested some fun where-to-watch alternatives in What's On. As always, take what you need and leave the rest – and if you liked what you read here, subscribe &rarr;</a><a href="https://digitalnews.evlink23.net/public/messages/view-online/Sdi4G4KhnpJkEbVd/APRwdwGz5QCi5Hv7/n96IVN8vchsLJP0y/send" target="_blank" rel="noopener">, or forward to a friend &rarr;</a></div></div></div><div class="box"><div class="box-inner"><div class="kicker">Everyone&rsquo;s Talking About</div><p>Everyone's Talking About</p><p>Beauty or beast? Cape Town's new EDITION hotel gets people talking</p><p>Cape Town's newest luxury hotel has become a genuine talking point – not for the rooftop bar or the spa, but for a facade that's split opinion right down the middle. Everyone has a view; nobody agrees. Take a look at the photo and make up your own mind.</p><div class="links"><a href="https://www.ewn.co.za/2026/08/13/beauty-or-beast-cape-town-s-new-edition-hotel-gets-people-talking" target="_blank" rel="noopener">See the building &amp; decide → &rarr;</a></div></div></div><div class="box and-finally"><div class="box-inner"><div class="kicker">And finally&hellip;</div><p>And finally…</p><p>A string of influencers chasing the perfect close-up with a shark this year have ended up bitten rather than liked, prompting marine biologists to state the obvious out loud. "You wouldn't walk into the Serengeti and put your hand on the face of a lion," one shark scientist told the BBC. Turns out you can't follow a shark. It follows you.</p><div class="links"><a href="https://petapixel.com/2026/08/18/influencers-trying-to-get-photos-with-sharks-keep-getting-bitten/" target="_blank" rel="noopener">Read on PetaPixel → &rarr;</a></div></div></div></div></div>
+
+<div class="site-footer"><div class="bar">The Shortlist is published weekly by <em>Media Connect</em>. Stories link to source publications.<br>Curated with ♥ · Not financial advice</div></div>
+
+</body></html>
