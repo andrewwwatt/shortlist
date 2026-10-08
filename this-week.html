@@ -1,0 +1,254 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>the Shortlist — 2 October 2026</title>
+<style>
+:root{--gold:#c9a84c;--dark:#1a1a1a;--cream:#f4f1ec;--card:#fff;--body:#555;--purple:#8B2FC9;--line:#f0ece4;--sub:#e8e3d8}
+*{margin:0;padding:0;box-sizing:border-box}
+body{font-family:Arial,Helvetica,sans-serif;background:var(--cream);color:#333;line-height:1.6;-webkit-font-smoothing:antialiased}
+a{color:inherit;}
+
+header{background:var(--dark);color:#fff;padding:0;}
+.header-inner{max-width:1100px;margin:0 auto;padding:20px 24px;display:flex;align-items:center;justify-content:space-between;flex-wrap:wrap;gap:12px;}
+.logo{font-family:Georgia,'Times New Roman',serif;font-weight:400;font-style:italic;font-size:36px;letter-spacing:-.02em;color:var(--gold);}
+.logo span{font-style:normal;color:#fff;font-weight:700;font-size:18px;text-transform:uppercase;letter-spacing:.2em;}
+nav{display:flex;gap:20px;align-items:center;}
+nav a{color:#aaa;font-size:14px;text-transform:uppercase;letter-spacing:.08em;font-weight:600;}
+nav a:hover{color:#fff;}
+a.subscribe-btn{background:var(--gold);color:var(--dark)!important;padding:6px 16px;border-radius:4px;font-weight:700;font-size:12px!important;}
+
+.container{max-width:1100px;margin:0 auto;padding:40px 24px 60px;}
+.issue-header{text-align:center;margin-bottom:40px;}
+.issue-header .edition{color:var(--gold);font-size:12px;text-transform:uppercase;letter-spacing:.12em;font-weight:700;}
+.issue-header h1{font-family:Georgia,serif;font-size:34px;color:var(--dark);margin-bottom:6px;}
+.issue-header p{color:var(--body);font-size:14px;}
+.issue-note{background:var(--card);border:1px solid var(--line);border-radius:8px;padding:14px 18px;font-size:13px;color:var(--body);margin-bottom:32px;text-align:center;}
+.issue-note a{color:var(--dark);font-weight:700;border-bottom:2px solid var(--gold);}
+
+.email{max-width:650px;margin:0 auto;background:var(--card);border-radius:12px;overflow:hidden;box-shadow:0 2px 8px rgba(0,0,0,.08);}
+.email-header{background:var(--dark);text-align:center;padding:32px 24px 24px;}
+.email-header .logo-img{font-family:Georgia,serif;font-style:italic;font-size:34px;color:#fff;letter-spacing:-.02em;}
+.email-header .logo-img span{color:var(--gold);}
+.email-header .date{color:#aaa;font-size:11px;text-transform:uppercase;letter-spacing:.12em;margin-top:4px;}
+.badge{display:inline-block;background:var(--gold);color:var(--dark);font-size:10px;font-weight:700;letter-spacing:.12em;text-transform:uppercase;padding:3px 10px;margin-top:10px;border-radius:2px;}
+
+.email-body{padding:24px 5% 32px;}
+
+/* Sponsored */
+.sponsored{border:1px solid var(--sub);border-radius:6px;padding:16px 18px;margin-bottom:28px;}
+.sponsored .tag{font-size:9px;font-weight:700;letter-spacing:.14em;text-transform:uppercase;color:#999;margin-bottom:10px;}
+.sponsored .s-logo{width:110px;height:70px;background:var(--dark);display:inline-block;float:left;margin-right:16px;text-align:center;line-height:70px;font-size:26px;border-radius:4px;}
+.sponsored h4{font-family:Georgia,serif;font-size:17px;color:var(--dark);margin-bottom:6px;font-weight:700;}
+.sponsored .s-name{font-size:10px;font-weight:700;letter-spacing:.1em;text-transform:uppercase;color:var(--gold);margin-bottom:4px;}
+.sponsored p{font-size:13px;color:var(--body);line-height:1.5;margin-bottom:10px;}
+.sponsored a{font-size:11px;font-weight:700;text-transform:uppercase;letter-spacing:.05em;border-bottom:2px solid var(--gold);padding-bottom:2px;color:var(--dark);}
+
+/* Editor's Note */
+.editors-note{border-left:3px solid var(--gold);background:#faf8f4;padding:16px 18px;margin-bottom:28px;}
+.editors-note .tag{font-size:12px;font-weight:700;letter-spacing:.12em;text-transform:uppercase;color:var(--gold);margin-bottom:10px;}
+.editors-note p{font-family:Georgia,serif;font-size:15px;font-style:italic;line-height:1.65;color:#333;margin-bottom:12px;}
+.editors-note p:last-child{margin-bottom:0;}
+
+/* Section title */
+.section-title{font-size:14px;font-weight:700;letter-spacing:.14em;text-transform:uppercase;color:var(--gold);border-top:2px solid var(--gold);padding-top:14px;margin-bottom:20px;}
+
+/* Story */
+.story{margin-bottom:24px;}
+.story .thumb{width:110px;height:70px;background:var(--dark);display:inline-block;float:left;margin-right:16px;text-align:center;line-height:70px;font-size:26px;border-radius:4px;}
+.story .source{font-size:10px;font-weight:700;letter-spacing:.1em;text-transform:uppercase;color:var(--gold);margin-bottom:4px;}
+.story h4{font-family:Georgia,serif;font-size:17px;color:var(--dark);margin-bottom:6px;line-height:1.3;}
+.story p{font-size:13.5px;color:var(--body);line-height:1.6;margin-bottom:10px;}
+.story a.read{font-size:11px;font-weight:700;text-transform:uppercase;letter-spacing:.05em;border-bottom:2px solid var(--gold);padding-bottom:2px;color:var(--dark);}
+.story::after{content:"";display:table;clear:both;}
+.story-divider{border-top:1px solid var(--line);margin:0 0 24px;}
+
+/* Ghost Bites */
+.ghost-bites{border-left:3px solid var(--purple);padding:16px 18px;background:#fff;margin-bottom:24px;}
+.ghost-bites .tag{font-size:12px;font-weight:700;letter-spacing:.14em;text-transform:uppercase;color:var(--purple);margin-bottom:8px;}
+.ghost-bites p{font-size:13px;color:var(--body);line-height:1.6;margin-bottom:12px;}
+.ghost-bites strong{color:var(--dark);}
+.ghost-bites a{font-size:11px;font-weight:700;text-transform:uppercase;letter-spacing:.05em;border-bottom:2px solid var(--purple);padding-bottom:2px;color:#2d2d2d;}
+
+/* Whats On */
+.whats-on{border-left:3px solid var(--gold);background:#faf8f4;padding:16px 18px;margin-bottom:24px;}
+.whats-on .tag{font-size:12px;font-weight:700;letter-spacing:.12em;text-transform:uppercase;color:var(--gold);margin-bottom:12px;}
+.whats-on h5{font-family:Georgia,serif;font-size:15px;color:var(--dark);margin-bottom:4px;}
+.whats-on p{font-size:13px;color:var(--body);line-height:1.5;margin-bottom:6px;}
+.whats-on .sub-sec{border-top:1px solid var(--sub);margin-top:14px;padding-top:14px;}
+.whats-on a{font-size:11px;font-weight:700;text-transform:uppercase;letter-spacing:.05em;border-bottom:2px solid var(--gold);padding-bottom:2px;color:var(--dark);}
+
+footer{background:var(--dark);color:#777;padding:32px 24px;text-align:center;font-size:13px;line-height:1.8;}
+footer .logos{font-family:Georgia,serif;font-size:24px;font-style:italic;color:#aaa;margin-bottom:8px;letter-spacing:-.02em;}
+footer .logos span{color:var(--gold);}
+footer .sep{color:#444;margin:0 6px;}
+
+@media(max-width:600px){
+  .header-inner{flex-direction:column;text-align:center;}
+  nav{flex-wrap:wrap;justify-content:center;gap:12px;}
+  .email-header{padding:24px 16px;}
+}
+</style>
+</head>
+<body>
+
+<header>
+<div class="header-inner">
+  <div class="logo">the <span>Shortlist</span></div>
+  <nav>
+    <a href="/">Home</a>
+    <a href="/this-week.html">This Week</a>
+    <a href="/archive.html">Archive</a>
+    <a href="/subscribe.html" class="subscribe-btn">Subscribe</a>
+  </nav>
+</div>
+</header>
+
+<div class="container">
+<div class="issue-header">
+  <div class="edition">National Edition</div>
+  <h1>The Shortlist — 2 October 2026</h1>
+  <p>Your week, curated</p>
+</div>
+
+<div class="issue-note">
+  📬 <a href="/archive.html">View past issues</a> — or <a href="/subscribe.html">get this in your inbox</a> every Thursday
+</div>
+
+<div class="email">
+<div class="email-header">
+  <div class="logo-img">the <span>Shortlist</span></div>
+  <div class="date">2 October 2026 · Your week, curated</div>
+  <div class="badge">National Edition</div>
+</div>
+<div class="email-body">
+
+<div class="sponsored">
+  <div class="tag">Sponsored</div>
+  <div class="s-logo">🏠</div>
+  <div class="s-name">AA Financial Services</div>
+  <h4>What would it actually cost to rebuild your home?</h4>
+  <p>Most homeowners' cover is based on an old estimate, not what materials and labour cost today. AA Financial Services' free Home Rebuild Cost Report gives you an up-to-date number in minutes, so you're not the one who finds out the gap the hard way.</p>
+  <a href="https://aafinancialservices.co.za/products/motor-home-insurance/" target="_blank">Get your free report →</a>
+  <div style="clear:both"></div>
+</div>
+
+<div class="editors-note">
+  <div class="tag">Editor's Note</div>
+  <p>When the head of one of the world's biggest artificial intelligence companies asks his own industry to slow down, it's worth asking why. Is he genuinely frightened of what he's building, or would a pause simply suit the people already in front? Possibly a bit of both, which is what makes it interesting.</p>
+  <p>So we look at AI from three corners of the triangle this week: the bad news, the good news, and how it actually impacts you. Read all three and you'll be the best-informed person at the braai.</p>
+  <p>But, maybe not the richest. Unless you are one of the very few who started trading cards when you were a kid. Julie Scheier from CGTN reports on South Africa's trading card economy, where a Pokémon card can cost more than a car.</p>
+  <p>Truth really is stranger than fiction, this week. And yes, pretty much every week these days.</p>
+  <p>If you enjoy this, please <a href="#" style="color:#000;font-weight:700;">forward</a> it to a friend, or <a href="/subscribe.html" style="color:#000;font-weight:700;">subscribe</a> if you haven't already.</p>
+</div>
+
+<div class="section-title">This Week</div>
+
+<div class="story">
+  <div class="thumb">🤖</div>
+  <div class="source">Substack · Ghost Mail · EWN</div>
+  <h4>AI: The good, the bad, and what it means for me</h4>
+  <p>Artificial intelligence had a noisy week, so here are three ways to read it. <strong>The good:</strong> AI is speeding up the search for new medicines — Steven Boykey Sidley counts more than 170 AI-designed drugs now being tested. <strong>The bad:</strong> the head of one of the biggest AI companies has asked the whole industry to slow down, warning that AI systems working together could soon be powerful enough to take over the internet. <strong>What it means for me:</strong> your job is safe for now, says the Bureau for Economic Research, though junior roles are already getting scarcer.</p>
+  <a class="read" href="https://stevenboykeysidley.substack.com/p/the-nobler-side-of-ai" target="_blank">The good →</a> ·
+  <a class="read" href="https://www.ghostmail.co.za/the-war-of-the-currents-and-our-current-concern/" target="_blank">The bad →</a> ·
+  <a class="read" href="https://www.ewn.co.za/ai-not-expected-to-replace-sa-jobs-anytime-soon-says-economist/" target="_blank">What it means for me →</a>
+</div>
+<div class="story-divider"></div>
+
+<div class="story">
+  <div class="thumb">🃏</div>
+  <div class="source">CGTN – Julie Scheier</div>
+  <h4>South Africa's $100 million card game</h4>
+  <p>The cards your children swapped at break have quietly become an economy. South Africa's trading card market — Pokémon, Magic: The Gathering, Yu-Gi-Oh! — is now put at around $100 million, driven by nostalgia, scarcity and a wave of overseas investors. A 1998 Pikachu card sold for $16.5 million in February, the most ever paid for a trading card.</p>
+  <a class="read" href="https://www.youtube.com/watch?v=DYNg4F2D9QU" target="_blank">Watch the video →</a>
+</div>
+<div class="story-divider"></div>
+
+<div class="story">
+  <div class="thumb">📞</div>
+  <div class="source">EWN – Wendy Knowler</div>
+  <h4>Think it's your bank calling? Just hang up</h4>
+  <p>The call looks as if it's coming from your bank, and the person on the line knows your account details. That proves nothing, says consumer journalist Wendy Knowler: scammers buy leaked personal information and can fake the number on your screen. Her advice fits on a sticky note. Hang up, phone the number on the back of your card, and never share a one-time PIN or agree to a video call with someone who rang you.</p>
+  <a class="read" href="https://www.ewn.co.za/2026/09/29/think-its-your-bank-calling-wendy-knowler-says-just-hang-up" target="_blank">Read on EWN →</a>
+</div>
+<div class="story-divider"></div>
+
+<div class="story">
+  <div class="thumb">🛍</div>
+  <div class="source">Business Maverick – Stephen Grootes</div>
+  <h4>The shopping mall refuses to die</h4>
+  <p>We were told online shopping would finish off the mall. Stephen Grootes went looking for the body and found a crowd instead. Malls that give people a reason to turn up — a haircut, a coffee, a beauty counter — are doing well, while the ultra-cheap online sellers that were supposed to replace them are running into tighter rules and thinner profits. Shopping, like life, is going to stay both online and in person.</p>
+  <a class="read" href="https://www.dailymaverick.co.za/article/2026-09-29-reports-of-the-death-of-the-retail-shopping-mall-have-been-greatly-exaggerated/" target="_blank">Read on Daily Maverick →</a>
+</div>
+<div class="story-divider"></div>
+
+<div class="story">
+  <div class="thumb">🌍</div>
+  <div class="source">Daily Maverick – Beth Howell</div>
+  <h4>Over 60 and going places</h4>
+  <p>South Africa's over-60s have nearly doubled in number since 2002, to 6.6 million — and they aren't staying home. Almost two-thirds of over-fifties planned to travel this year, and one trip abroad in five was a "bucket list" journey. Beth Howell picks six for people who'd rather not rough it, from three nights on Rovos Rail to an Antarctic trip that flies over the famously rough sea crossing.</p>
+  <a class="read" href="https://www.dailymaverick.co.za/article/2026-09-26-over-60-and-going-places-see-the-world-without-roughing-it/" target="_blank">Read on Daily Maverick →</a>
+</div>
+
+<div class="section-title" style="margin-top:32px;">Ghost Bites</div>
+
+<div class="ghost-bites">
+  <div class="tag">Ghost Bites – Markets</div>
+  <p><strong>Capitec</strong> was the JSE's biggest story this week, with profit and the dividend both up 19% for the six months to August. Business clients more than doubled to 686,000, its fintech arm (which now sells cellphones, putting a bank in competition with clothing retailers) earns more than its insurance business. The warning sign is that bad debts are creeping up. <strong>Clicks</strong> is paying R507 million to take control of ARC, the premium beauty chain whose Sandton City store is reportedly Africa's largest beauty shop. <strong>SPAR</strong>, still recovering from a botched computer system, warned that this year's results will be worse than last year's.</p>
+  <p><strong>Gold Fields</strong> confirmed it made an offer for Australian miner Northern Star, but the target's board has said no for now. <strong>Gemfields</strong> wrote $125 million off the value of its Mozambique ruby mine, leaving it with an overall loss. And <strong>AngloGold Ashanti</strong> earned a public telling-off from the JSE for posting its results on its own website 24 minutes before telling the stock exchange.</p>
+  <a href="http://ghostmailsa.beehiiv.com/" target="_blank">More on Ghost Mail →</a>
+</div>
+
+<div class="section-title">What's On This Week</div>
+
+<div class="whats-on">
+  <p style="font-style:italic;color:var(--body);margin-bottom:14px;">Spring has properly arrived. Walk back to where Joburg began, bid on a bottle you'll never open, or take the dog to a parade.</p>
+  <h5>Gauteng – A birthday walk, strange films and a koppie clean-up</h5>
+  <p>Johannesburg turns 140 this year, and on Saturday afternoon (2pm, from R195) the Johannesburg Heritage Foundation leads a <strong>walk through Ferreirasdorp</strong>, back to the diggings where the city started. On Sunday at 4pm, The Bioscope screens the <strong>Joburg Underground Film Festival</strong> (R104.50). And if you'd rather get your hands dirty, the <strong>Melville Koppies</strong> work party needs volunteers on Sunday from 8am to clear invasive plants — free, gloves and strong shoes required (071 688 4924).</p>
+  <a href="https://www.quicket.com/organisers/36829-johannesburg-heritage-foundation" target="_blank">Heritage walk →</a> ·
+  <a href="https://thebioscope.co.za/joburg-underground/" target="_blank">Film festival →</a>
+  <div class="sub-sec">
+  <h5>Western Cape – Rare wine and rescue dogs</h5>
+  <p>The <strong>Cape Winemakers Guild Auction</strong> runs today and tomorrow: 58 wines made in tiny quantities just for this sale, including a Syrah one critic scored 99 out of 100. Last year's auction raised a record R17.2 million. On Sunday, World Animal Day, animal rescue groups <strong>parade along the Sea Point Promenade</strong> under their own banners. Bring the family, and the dog.</p>
+  <a href="https://gregsherwoodmw.substack.com/p/cape-winemakers-guild-auction-2026" target="_blank">Auction guide →</a> ·
+  <a href="https://www.goodthingsguy.com/animal-rescue-parade-cape-town/" target="_blank">Rescue parade →</a>
+  </div>
+  <div class="sub-sec">
+  <h5>KwaZulu-Natal – Golf for everyone, then the Aussies</h5>
+  <p>The new <strong>Durban Golf Festival</strong> runs until Sunday at Royal Durban and Windsor golf clubs — deliberately not just for serious golfers: beginner clinics, padel, family entertainment and divisions for juniors, women and disabled players. Next Friday the real heavyweights arrive, when the <strong>Proteas meet Australia</strong> in the first Test at Kingsmead (9–13 October).</p>
+  <a href="https://www.timeout.com/durban/news/durbans-new-golf-festival-tees-off-in-october-071726" target="_blank">Golf festival →</a>
+  </div>
+</div>
+
+<div class="section-title">The Hot List</div>
+
+<div class="story">
+  <div class="thumb">🌡️</div>
+  <div class="source">The Witness</div>
+  <h4>A "super El Niño" summer is on the way</h4>
+  <p>El Niño is a natural warming of the Pacific Ocean that shifts weather around the world every few years, and this one is shaping up to be a monster: US forecasters put the odds at three in four that it will be the strongest since records began in 1950. For South Africa, the Weather Service expects a hotter summer than usual, with a growing chance of below-normal rain — so think heatwaves, fire risk and thirstier gardens. The reassuring part: we go in well stocked, with this year's maize harvest bigger than last year's. Planning, not panic.</p>
+  <a class="read" href="https://witness.co.za/news/2026/09/22/hotter-drier-summer-ahead-experts-unpack-sas-el-nino-risks/" target="_blank">Read on The Witness →</a>
+</div>
+<div class="story-divider"></div>
+
+<div class="story" style="margin-bottom:0;">
+  <div class="thumb">🐻</div>
+  <div class="source">And finally…</div>
+  <h4>Alaska has crowned its fattest bear</h4>
+  <p>The winner of Fat Bear Week 2026 is Bear 89, known as Backpack because he used to ride on his mother's back as a cub — and she, naturally, is a former champion herself. He squeezed past a rival called Dancing Queen in one of the closest finals yet. A mama's boy who ate his way to the top: there's hope for us all.</p>
+  <a class="read" href="https://www.popsci.com/environment/fat-bear-week-finalists-910-backpack/" target="_blank">Read more →</a>
+</div>
+
+</div>
+</div>
+</div>
+
+<footer>
+  <div class="logos">the <span>Shortlist</span></div>
+  <p><a href="/">Home</a> <span class="sep">·</span> <a href="/archive.html">Archive</a> <span class="sep">·</span> <a href="/subscribe.html">Subscribe</a><br>
+  <span style="color:#555">© 2026 Media Connect Moments Lifestyle</span></p>
+</footer>
+
+</body>
+</html>
